@@ -73,9 +73,12 @@ class ScallopCommandLine(props: => PropertiesConfiguration, args: Array[String])
 
   printedName = "easy-split-multi-deposit"
   version(s"$printedName ${Version()}")
-  banner(s"""Utility to process a Multi-Deposit prior to ingestion into the DANS EASY Archive
+  banner(s"""
+           |  Utility to process a Multi-Deposit prior to ingestion into the DANS EASY Archive
            |
-           |Usage: $printedName.sh [{--springfield-inbox|-s} <dir>] <multi-deposit-dir> <output-deposits-dir>
+           |Usage:
+           |  $printedName.sh [{--springfield-inbox|-s} <dir>] <multi-deposit-dir> <output-deposits-dir>
+           |
            |Options:
            |""".stripMargin)
 
